@@ -48,6 +48,13 @@ The backend follows RESTful principles, providing endpoints for managing courses
 | `DELETE` | `/api/notes/:id` | Delete a specific note. | N/A |
 
 ---
+### Data Validation while adding Course and Notes
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ca84de9c-6fae-434d-bb17-fda94a7a79e0" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cfffabf7-6698-4bdc-8b2a-062c1c9caa14" />
+
+## Summarizing the Notes
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/64af13dc-1982-48e2-bc75-9101badbfdba" />
+
 ## ⚙️ Setup & Installation
 
 ### 1. Prerequisites
@@ -57,16 +64,11 @@ The backend follows RESTful principles, providing endpoints for managing courses
 ### 2. Server Configuration
 ```bash
 cd server
-npm install```
+npm install
 
 
 
-### Data Validation while adding Course and Notes
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ca84de9c-6fae-434d-bb17-fda94a7a79e0" />
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cfffabf7-6698-4bdc-8b2a-062c1c9caa14" />
 
-##Summarizing the Notes
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/64af13dc-1982-48e2-bc75-9101badbfdba" />
 
 
 
