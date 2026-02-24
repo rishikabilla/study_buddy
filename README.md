@@ -25,12 +25,18 @@
 The application follows a relational structure where one course can contain many notes.
 <img width="684" height="312" alt="Untitled" src="https://github.com/user-attachments/assets/b3ff2740-802b-439e-9461-5ec51484f74c" />
 
+---
+## 📝 API Documentation (Endpoints)
 
-
+| Method | Endpoint | Description | Request Body (JSON) |
+| :--- | :--- | :--- | :--- |
+| `GET` | `/api/courses` | Fetch all courses | N/A |
+| `POST` | `/api/courses` | Create a new course | `{"title": "Course Name"}` |
+| `DELETE` | `/api/courses/:id` | Delete course & notes | N/A |
+| `GET` | `/api/courses/:id/notes` | Get notes for a course | N/A |
+| `PUT` | `/api/notes/:id/summarize` | **AI:** Generate summary | N/A |
 
 ---
-
-
 ## ⚙️ Setup & Installation
 
 ### 1. Prerequisites
