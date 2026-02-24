@@ -3,8 +3,12 @@
 **StudyBuddy** is a high-performance productivity tool that helps students organize course materials and generate instant, AI-driven summaries of complex notes using the **Groq LPU Inference Engine**.
 
 ---
-
-## ✨ Key Features
+##✨ Key Features and Technical Implementation:
+* **Data Validation:** The system implements strict validation logic that prevents the creation of empty notes, ensuring a clean and useful database.
+* **Breadcrumb Navigation:** To enhance user experience, the frontend features breadcrumb navigation that provides a clear, folder-like structure of the current route.
+* **Transactional Cascade Delete:** When a course is removed, the backend automatically deletes all associated notes first to maintain relational integrity.
+* **Dynamic Database Updates:** Every time a summary is generated via the AI, the database is immediately updated to ensure that the summary persists across user sessions.
+* **Sub-Second Latency:** Leveraging Groq's hardware allows for summarization responses in under 500ms, providing a seamless flow for the student.
 * **Hierarchical Organization:** Organize study materials by Course/Subject.
 * **Instant Summarization:** Powered by **Groq (Llama 3.3 70B)** for sub-second AI summaries.
 * **Persistent Storage:** Uses **SQLite** via Knex.js to ensure your data stays safe locally.
