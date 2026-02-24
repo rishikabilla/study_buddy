@@ -33,8 +33,11 @@ The application follows a relational structure where one course can contain many
 | `GET` | `/api/courses` | Fetch all courses | N/A |
 | `POST` | `/api/courses` | Create a new course | `{"title": "Course Name"}` |
 | `DELETE` | `/api/courses/:id` | Delete course & notes | N/A |
-| `GET` | `/api/courses/:id/notes` | Get notes for a course | N/A |
-| `PUT` | `/api/notes/:id/summarize` | **AI:** Generate summary | N/A |
+| `GET` | `/api/courses/:id/notes` | Get notes for a specific course | N/A |
+| `POST` | `/api/courses/:id/notes` | **Add a new note** to a course | `{"title": "Note Title", "content": "..."}` |
+| `PUT` | `/api/notes/:id` | Update note title or content | `{"title": "New Title", "content": "..."}` |
+| `PUT` | `/api/notes/:id/summarize` | **AI:** Generate summary via Groq | N/A |
+| `DELETE` | `/api/notes/:id` | Delete a specific note | N/A |
 
 ---
 ## ⚙️ Setup & Installation
