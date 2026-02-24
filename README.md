@@ -28,16 +28,19 @@ The application follows a relational structure where one course can contain many
 ---
 ## 📝 API Documentation (Endpoints)
 
+The backend follows RESTful principles, providing endpoints for managing courses and notes, integrated with AI summarization.
+
 | Method | Endpoint | Description | Request Body (JSON) |
 | :--- | :--- | :--- | :--- |
-| `GET` | `/api/courses` | Fetch all courses | N/A |
-| `POST` | `/api/courses` | Create a new course | `{"title": "Course Name"}` |
-| `DELETE` | `/api/courses/:id` | Delete course & notes | N/A |
-| `GET` | `/api/courses/:id/notes` | Get notes for a specific course | N/A |
-| `POST` | `/api/courses/:id/notes` | **Add a new note** to a course | `{"title": "Note Title", "content": "..."}` |
-| `PUT` | `/api/notes/:id` | Update note title or content | `{"title": "New Title", "content": "..."}` |
-| `PUT` | `/api/notes/:id/summarize` | **AI:** Generate summary via Groq | N/A |
-| `DELETE` | `/api/notes/:id` | Delete a specific note | N/A |
+| `GET` | `/api/courses` | Fetch all available courses. | N/A |
+| `POST` | `/api/courses` | Create a new course category. | `{"title": "Subject Name"}` |
+| `DELETE` | `/api/courses/:id` | **Cascade Delete:** Removes a course and all associated notes. | N/A |
+| `GET` | `/api/courses/:courseId/notes` | Fetch all notes belonging to a specific course. | N/A |
+| `POST` | `/api/courses/:courseId/notes` | **Add Note:** Create a new note within a course context. | `{"title": "Note Title", "content": "..."}` |
+| `PUT` | `/api/notes/:id` | Update a note's title or text content. | `{"title": "New Title", "content": "..."}` |
+| `PUT` | `/api/notes/:id/summarize` | **AI Feature:** Generate a 1-2 sentence summary via Groq (Llama 3.3). | N/A |
+| `PUT` | `/api/notes/:id/clear-summary` | Reset and remove the AI summary for a note. | N/A |
+| `DELETE` | `/api/notes/:id` | Delete a specific note. | N/A |
 
 ---
 ## ⚙️ Setup & Installation
