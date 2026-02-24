@@ -57,7 +57,9 @@ The backend follows RESTful principles, providing endpoints for managing courses
 ### 2. Server Configuration
 ```bash
 cd server
-npm install
+npm install```
+
+
 
 ### Data Validation while adding Course and Notes
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ca84de9c-6fae-434d-bb17-fda94a7a79e0" />
