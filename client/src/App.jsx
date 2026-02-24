@@ -141,21 +141,25 @@ function StudyBuddy() {
 
 
   const deleteCourse = async (e, id) => {
-
     e.stopPropagation();
-
     if (!window.confirm("Delete this course and all its notes?")) return;
-
+    
     try {
-
       await axios.delete(`${API_BASE}/courses/${id}`);
-
-      if (courseId === id.toString()) navigate("/");
-
+      
+      // 1. If we are currently looking at the deleted course, clear the UI
+      if (courseId === id.toString()) {
+        setNotes([]);        // Clear the notes list
+        setActiveNote(null); // Close the editor
+        navigate("/");       // Go back home
+      }
+      
+      // 2. Refresh the sidebar list
       fetchCourses();
-
-    } catch (err) { console.error(err); }
-
+      
+    } catch (err) { 
+      console.error(err); 
+    }
   };
 
 
