@@ -2,6 +2,7 @@
 
 **StudyBuddy** is a high-performance productivity tool that helps students organize course materials and generate instant, AI-driven summaries of complex notes using the **Groq LPU Inference Engine**.
 
+[🎥 Watch the Demo Video](https://drive.google.com/file/d/1cv9I8RPatSihvC2T1UxZyBzkvGBTT-lr/view?usp=sharing)
 ---
 ## ✨ Key Features and Technical Implementation:
 * **Data Validation:** The system implements strict validation logic that prevents the creation of empty notes, ensuring a clean and useful database.
@@ -57,3 +58,13 @@ The backend follows RESTful principles, providing endpoints for managing courses
 ```bash
 cd server
 npm install
+
+### Data Validation while adding Course and Notes
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/ca84de9c-6fae-434d-bb17-fda94a7a79e0" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cfffabf7-6698-4bdc-8b2a-062c1c9caa14" />
+
+##Summarizing the Notes
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/64af13dc-1982-48e2-bc75-9101badbfdba" />
+
+
+
