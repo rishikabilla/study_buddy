@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const db = require('./db'); 
@@ -9,7 +10,7 @@ app.use(express.json());
 
 // --- AI CONFIGURATION ---
 const groq = new Groq({ 
-  apiKey: "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" 
+  apiKey: process.env.GROQ_API_KEY 
 });
 
 // --- COURSE ROUTES (Root Resources) ---
